@@ -9,8 +9,7 @@ def pre_make(options, buildout):
     substitute(
         os.path.join(
             options['compile-directory'],
-            'extras',
-            'template_gis',
+            'loader',
             'Makefile'
         ),
         '\$\(DESTDIR\)',
@@ -22,7 +21,7 @@ def pre_make(options, buildout):
     substitute(
         os.path.join(
             options['compile-directory'],
-            'Makefile.config'
+            'Makefile'
         ),
         'DLFLAGS=-shared',
         'DLFLAGS=-shared %s' % rpath
@@ -36,9 +35,7 @@ def pre_make_deb(options, buildout):
     substitute(
         os.path.join(
             options['compile-directory'],
-            'extras',
-            'template_gis',
-            'Makefile'
+            'loader',
         ),
         '\$\(DESTDIR\)',
         '$(prefix)')
