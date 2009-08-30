@@ -47,7 +47,6 @@ def pre_make_deb(options, buildout):
         '\$\(DESTDIR\)',
         '$(prefix)')
 def h(options, buildout):
-
     print
     print
     print
@@ -60,17 +59,9 @@ def h(options, buildout):
     print
     print
     print
-
-
-
-
     print "--------------------------------------------------------------------------------------------------------"
     print "POSTGIS INSTALL ITSELF INSIDE POSTGRESQL, SO TOUCHING POSTGRESQL == RE MINIMERGE POSTGIS    !!!!!!"
     print "--------------------------------------------------------------------------------------------------------"
-
-
-
-
     print
     print
     print
@@ -83,15 +74,6 @@ def h(options, buildout):
     print
     print
     print
-    print
-    print
-    print
-    print
-    print
-    print
-    print
-
-
 
 
 
